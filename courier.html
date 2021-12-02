@@ -184,7 +184,7 @@
 		return;
 	}
 
-	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+	let scanner = new Instascan.Scanner({ video: document.getElementById('preview'),mirror: true });
 	scanner.addListener('scan', function (content) {
 		// alert(content);
 		$("#code").val(content);
