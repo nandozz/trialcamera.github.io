@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-
+	<link rel="stylesheet" href="indexstyle.css">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	
 	<title>MyBox</title>
 
 </head>
@@ -20,12 +21,15 @@
 	</head>
 
 	<div class="main">
-		<label>MyBoku Box</label>
-        <div class="position-relative top-50 start-50 translate-middle">
-            <button onclick="window.location.href='http://6.tcp.ngrok.io:15340';">
-                Get Started
-            </button>
-        </div>
+		<label>MyBox</label>
+		<center>
+			<lottie-player webworkers="true" src="https://assets7.lottiefiles.com/private_files/lf30_bindyxss.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay ></lottie-player>
+			<p style="color: aliceblue;">Your parcel receiver</p><button type="button" class="btn btn-outline-primary">Order</button>
+			
+			<button onclick="window.location.href='login.html'">
+				Get Started
+			</button>
+		</center>
 	</div>
 </body>
 </html>
