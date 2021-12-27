@@ -21,10 +21,10 @@
 	<script type="text/javascript" language="javascript">
 		var mqtt;
 		var reconnectTimeout = 2000;
-		// var host = "broker.hivemq.com";
-		// var port = 8000;
-		var host = "8f77eef4b4aa44ccbbaa6e8309aee507.s1.eu.hivemq.cloud";
-		var port = 8884;
+		var host = "broker.hivemq.com";
+		var port = 8000;
+		// var host = "8f77eef4b4aa44ccbbaa6e8309aee507.s1.eu.hivemq.cloud";
+		// var port = 8884;
 
 
 		window.addEventListener('load', () => {
@@ -199,10 +199,10 @@
 			mqtt = new Paho.MQTT.Client(host, port, cname);
 			//document.write("connecting to "+ host);
 			var options = {
-				useSSL:true,
-				userName: "NANDO",
-				password: "Hivemq123",
-				timeout: 3,
+				// useSSL:true,
+				// userName: "NANDO",
+				// password: "Hivemq123",
+				// timeout: 3,
 				onSuccess: onConnect,
 				onFailure: onFailure,
 			};
